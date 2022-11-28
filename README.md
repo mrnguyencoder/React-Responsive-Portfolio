@@ -5,6 +5,8 @@ npx create-react-app .
 ///////
 npm i 
 react-router-dom 
+npm install @mui/icons-material
+
 yarn add
 @material-ui/core @material-ui/icons
 ///////
