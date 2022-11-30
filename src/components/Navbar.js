@@ -1,16 +1,19 @@
 import React, {} from 'react';
 import {Link} from 'react-router-dom';
 import "../styles/Navbar.css";
+import logo from "../assets/textnguyencoder.png";
 
 function Navbar() {
   return (
     <>
     <div className='navbar'>
-        <div className='logo'>nguyencoder</div>
+        <div className='logo'>
+         <img src={logo} alt="nguyencoder" />
+        </div>
         <div className='links'>   
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
+            <Link className='link' to="/">Home</Link>
+            <Link className='link' to="/projects">Projects</Link>
+            <Link className='link' to="/contact">Contact</Link>
         </div>
     </div>
     </>

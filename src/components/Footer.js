@@ -1,20 +1,22 @@
 import React from 'react';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import { SocialIcon } from 'react-social-icons';
 import "../styles/Footer.css"
+import logo from "../assets/textnguyencoder.png";
 
 
 
 function Footer() {
   return (
     <div className='footer'>
-        <div className='socialMedia'>
-            <LinkedInIcon />
-            <GitHubIcon />
-            <InstagramIcon />
-        </div>
-        <p>&copy; nguyencoder</p>
+      <div className='footer__name'>
+      <img src={logo} alt="nguyencoder" />
+      </div>
+      <div>
+        <SocialIcon className='footer__social' url="https://www.instagram.com/mrnguyencoder/" style={{ height: 30, width: 30 }}/>
+        <SocialIcon className='footer__social' url="https://github.com/mrnguyencoder" style={{ height: 30, width: 30 }}/>
+        <SocialIcon className='footer__social' url="https://codepen.io/mrnguyencoder" style={{ height: 30, width: 30 }}/>
+      </div>
+        
     </div>
   )
 }

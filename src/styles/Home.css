@@ -1,0 +1,27 @@
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e6f1ff;
+    text-align: start;
+}
+.bgcircle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    position: absolute;
+    border-radius: 9999px;
+    border: 1px solid #61dbfb;
+    width: 400px;
+    height: 400px;
+}
+.text {
+    position: absolute;
+    align-items: center;
+    font-size: 2rem;
+}
