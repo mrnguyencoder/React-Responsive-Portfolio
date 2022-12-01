@@ -2,7 +2,11 @@ import React from 'react';
 import '../styles/Contact.css';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import { useForm } from "react-hook-form";
+
 function Contact() {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = data => console.log(data);
   return (
     <div className='contact'>
       <p className='contact__title'>Let's talk</p>
@@ -15,16 +19,16 @@ function Contact() {
         <AlternateEmailIcon />
         <p>mr.nguyencoder@gmail.com</p>
       </div>
-      <form className='form'>
+      <form onSubmit={handleSubmit(onSubmit)} className='form'>
         <div className='form__input'>
-          <input className='contactInput' type='text' />
-          <input className='contactInput' type='text' />
+          <input {...register('name')} className='contactInput' placeholder='Name' type='text' />
+          <input {...register('email')} className='contactInput' placeholder='Email'type='email' />
         </div>
-        <input className='contactInput' type='text' />
-        <textarea className='contactInput' />
-        <button className='button'>Sumit</button>
+        <input {...register('subject')} className='contactInput' placeholder='Subject' type='text' />
+        <textarea {...register('message')} className='contactInput' placeholder='Message' />
+        <button className='button' type='submit'>Submit</button>
 
-      </form>
+      </form> 
 
     </div>
   )
