@@ -1,17 +1,9 @@
 practice react by building form portfolio
+I leart about:
 
-Step:
-npx create-react-app .
-///////
-npm i 
-react-router-dom 
-npm install @mui/icons-material
-
-yarn add
-@material-ui/core @material-ui/icons
-@mui/icons-material
-react-social-icons
-///////
-src/App.js add :
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
+react-router-dom: with Navigation links
+@material-ui/icons : Add Icon
+How to add image
+react-social-icons : simple social icons
+react Hook Form : form and submit form
+react-simple-typewriter : simple typewriter
