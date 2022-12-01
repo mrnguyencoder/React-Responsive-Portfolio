@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  border-top: 1px solid #0a192f;
+  padding: 0 1rem;
+  margin: 1rem 0;
 }
 .footer__name >img {
   max-width: 150px;

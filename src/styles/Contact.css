@@ -3,7 +3,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 80vh;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
     color: #f0db4f;
 }
 .contact__title {
@@ -18,20 +20,18 @@
 .form {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
 }  
 .contactInput {
     outline: none;
-    margin: 0.3rem 0;
+    margin: 0.4rem 0;
     background-color: aliceblue;
-    border-bottom: 2px;
-    padding: 1.5rem 3rem;
+    padding: 1.2rem 5rem;
     color: #3C873A;
     font-size: 1rem;
 }
 .button {
     background-color:#61dbfb ;
-    padding: 1rem 3rem;
+    padding: 0.6rem 3rem;
     color: #3C873A;
     margin-top: 0.8rem;
     font-size: 1.4rem;

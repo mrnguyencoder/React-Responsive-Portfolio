@@ -6,7 +6,9 @@ import { useForm } from "react-hook-form";
 
 function Contact() {
   const { register, handleSubmit } = useForm();
-  const onSubmit = data => console.log(data);
+  const onSubmit = data => {
+    window.location.href = `mailto:mr.nguyencoder@gmail.com?subject=${data.subject}&body=${data.message} (${data.email}) `
+  };
   return (
     <div className='contact'>
       <p className='contact__title'>Let's talk</p>
@@ -20,10 +22,9 @@ function Contact() {
         <p>mr.nguyencoder@gmail.com</p>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className='form'>
-        <div className='form__input'>
           <input {...register('name')} className='contactInput' placeholder='Name' type='text' />
           <input {...register('email')} className='contactInput' placeholder='Email'type='email' />
-        </div>
+
         <input {...register('subject')} className='contactInput' placeholder='Subject' type='text' />
         <textarea {...register('message')} className='contactInput' placeholder='Message' />
         <button className='button' type='submit'>Submit</button>

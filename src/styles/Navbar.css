@@ -4,15 +4,29 @@
   color: #e6f1ff;
 }
 .logo >img {
-  max-width: 150px;
-  padding: 1rem;
+  max-width: 250px;
+  padding: 2rem;
 }
 .links {
-  padding: 1rem;
+  padding: 2rem;
 }
 .link {
   color: #e6f1ff;
   text-decoration: none;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .logo >img {
+    max-width: 160px;
+    padding: 1rem;
+}
+  .links {
+  padding: 1rem;
+}
+  .link {
   padding: 1rem;
   font-size: 1rem;
+}
 }
