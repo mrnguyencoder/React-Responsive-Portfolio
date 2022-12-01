@@ -1,0 +1,39 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    color: #f0db4f;
+}
+.contact__title {
+    font-size: 3rem;
+    padding: 1rem;
+}
+.contact__phone,
+.contact__email {
+    display: flex;
+    padding: 1rem;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    /* width: fit-content; */
+    /* margin: auto 0; */
+}  
+.contactInput {
+    outline: none;
+    margin: 0.2rem 0;
+    background-color: aliceblue;
+    border-bottom: 2px;
+    padding: 2rem 3rem;
+    color: #3C873A;
+    font-size: 1rem;
+}
+.button {
+    background-color:#61dbfb ;
+    padding: 1rem 3rem;
+    color: #3C873A;
+    font-size: 1.4rem;
+}
